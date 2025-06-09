@@ -2,7 +2,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'twilio_voice_wrapper_platform_interface.dart';
-import 'twilio_voice_wrapper.dart';
+import 'models/call_event.dart';
+import 'exceptions/twilio_voice_exception.dart';
 
 /// An implementation of [TwilioVoiceWrapperPlatform] that uses method channels.
 class MethodChannelTwilioVoiceWrapper extends TwilioVoiceWrapperPlatform {
